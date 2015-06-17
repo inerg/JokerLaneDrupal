@@ -99,18 +99,6 @@
 
     <div id="main-content" class="black-background">
         <div class="box">
-
-        <div class="remove-spacing pure-g">
-            <div id="upcoming-race" class="pure-u-1 pure-u-sm-3-5">
-                <div class="box sidebar-right">
-
-
-
-                </div>
-            </div>
-        </div>
-
-
             <div class="body-header pure-g">
                 <div class="pure-u-1 pure-u-sm-1-2">
                     <h1 class="remove-spacing">Latest News</h1>
@@ -131,7 +119,7 @@
                         <?php print render($page['content']) ?>
                         <h2 class="remove-spacing">Upcoming Race Events</h2>
                         <hr class="dashed">
-                        <div class="pure-g">//Race event node
+                        <div class="pure-g"><!--Race event node-->
                             <div class="pure-u-1-3">
                                 <a href="#"><img src="img/rcgears-small.png" alt="club picture" class="pure-img"></a>
                             </div>
@@ -154,7 +142,7 @@
                         <hr class="dashed">
 
                         <div>
-                            <h3 class="remove-spacing">Race Title</h3>//Track update node
+                            <h3 class="remove-spacing">Race Title</h3><!--Track update node-->
                             <span class="event-text remove-spacing">July 29-30, 2015 - </span>
                             <span class="event-text remove-spacing">Calgary, AB, CA</span>
                             <p>
