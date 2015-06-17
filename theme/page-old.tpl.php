@@ -99,19 +99,34 @@
 
     <div id="main-content" class="black-background">
         <div class="box">
+            <?php if ($breadcrumb || $title|| $messages || $tabs || $action_links): ?>
 
+            <?php print $breadcrumb; ?>
+
+            <div class="body-header pure-g">
+                <div class="pure-u-1 pure-u-sm-1-2">
+                <?php if ($title): ?>
+                    <h1 class="title remove-spacing"><?php print $title; ?></h1>
+                <?php endif; ?>
+                </div>
+
+                <div class="pure-u-1 pure-u-sm-1-2 "> <!-- subscribe area this most likely will change-->
+                <?php if ($action_links): ?>
+                    <ul class="action-links"><?php print render($action_links); ?></ul>
+                <?php endif; ?>
+                </div>
+
+            </div> <!-- /#content-header -->
+        <?php endif; ?>
+            <hr>
         <div class="remove-spacing pure-g">
             <div id="upcoming-race" class="pure-u-1 pure-u-sm-3-5">
                 <div class="box sidebar-right">
-
-
-
+            <?php print render($page['content']) ?>
                 </div>
             </div>
         </div>
-
-
-            <div class="body-header pure-g">
+            <!--<div class="body-header pure-g">
                 <div class="pure-u-1 pure-u-sm-1-2">
                     <h1 class="remove-spacing">Latest News</h1>
                 </div>
@@ -128,10 +143,69 @@
             <div class="remove-spacing pure-g">
                 <div id="upcoming-race" class="pure-u-1 pure-u-sm-3-5">
                     <div class="box sidebar-right">
-                        <?php print render($page['content']) ?>
                         <h2 class="remove-spacing">Upcoming Race Events</h2>
                         <hr class="dashed">
-                        <div class="pure-g">//Race event node
+                        <div class="pure-g">
+                            <div class="pure-u-1-3">
+                                <a href="#"><img src="img/rcgears-small.png" alt="club picture" class="pure-img"></a>
+                            </div>
+                            <div class="pure-u-2-3">
+                                <h3 class="remove-spacing">Race Title</h3>
+                                <span class="event-text remove-spacing">July 29-30, 2015 - </span>
+                                <span class="event-text remove-spacing">Calgary, AB, CA</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, vix ad euismod scriptorem. Quo prodesset dissentiet et, pri ea nostro utamur maiorum. Legendos comprehensam vis eu, no sed illum concludaturque. Eos eu reque saperet epicurei, sed ad nobis platonem iudicabit. Modus reformidans usu ei.
+                                </p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="pure-g">
+                            <div class="pure-u-1-3">
+                                <a href="#"><img src="img/rcgears-small.png" alt="club picture" class="pure-img"></a>
+                            </div>
+                            <div class="pure-u-2-3">
+                                <h3 class="remove-spacing">Race Title</h3>
+                                <span class="event-text remove-spacing">July 29-30, 2015 - </span>
+                                <span class="event-text remove-spacing">Calgary, AB, CA</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, vix ad euismod scriptorem. Quo prodesset dissentiet et, pri ea nostro utamur maiorum. Legendos comprehensam vis eu, no sed illum concludaturque. Eos eu reque saperet epicurei, sed ad nobis platonem iudicabit. Modus reformidans usu ei.
+                                </p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="pure-g">
+                            <div class="pure-u-1-3">
+                                <a href="#"><img src="img/rcgears-small.png" alt="club picture" class="pure-img"></a>
+                            </div>
+                            <div class="pure-u-2-3">
+                                <h3 class="remove-spacing">Race Title</h3>
+                                <span class="event-text remove-spacing">July 29-30, 2015 - </span>
+                                <span class="event-text remove-spacing">Calgary, AB, CA</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, vix ad euismod scriptorem. Quo prodesset dissentiet et, pri ea nostro utamur maiorum. Legendos comprehensam vis eu, no sed illum concludaturque. Eos eu reque saperet epicurei, sed ad nobis platonem iudicabit. Modus reformidans usu ei.
+                                </p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="pure-g">
+                            <div class="pure-u-1-3">
+                                <a href="#"><img src="img/rcgears-small.png" alt="club picture" class="pure-img"></a>
+                            </div>
+                            <div class="pure-u-2-3">
+                                <h3 class="remove-spacing">Race Title</h3>
+                                <span class="event-text remove-spacing">July 29-30, 2015 - </span>
+                                <span class="event-text remove-spacing">Calgary, AB, CA</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, vix ad euismod scriptorem. Quo prodesset dissentiet et, pri ea nostro utamur maiorum. Legendos comprehensam vis eu, no sed illum concludaturque. Eos eu reque saperet epicurei, sed ad nobis platonem iudicabit. Modus reformidans usu ei.
+                                </p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="pure-g">
                             <div class="pure-u-1-3">
                                 <a href="#"><img src="img/rcgears-small.png" alt="club picture" class="pure-img"></a>
                             </div>
@@ -154,7 +228,34 @@
                         <hr class="dashed">
 
                         <div>
-                            <h3 class="remove-spacing">Race Title</h3>//Track update node
+                            <h3 class="remove-spacing">Race Title</h3>
+                            <span class="event-text remove-spacing">July 29-30, 2015 - </span>
+                            <span class="event-text remove-spacing">Calgary, AB, CA</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, vix ad euismod scriptorem. Quo prodesset dissentiet et, pri ea nostro utamur maiorum. Legendos comprehensam vis eu, no sed illum concludaturque. Eos eu reque saperet epicurei, sed ad nobis platonem iudicabit. Modus reformidans usu ei.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h3 class="remove-spacing">Race Title</h3>
+                            <span class="event-text remove-spacing">July 29-30, 2015 - </span>
+                            <span class="event-text remove-spacing">Calgary, AB, CA</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, vix ad euismod scriptorem. Quo prodesset dissentiet et, pri ea nostro utamur maiorum. Legendos comprehensam vis eu, no sed illum concludaturque. Eos eu reque saperet epicurei, sed ad nobis platonem iudicabit. Modus reformidans usu ei.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h3 class="remove-spacing">Race Title</h3>
+                            <span class="event-text remove-spacing">July 29-30, 2015 - </span>
+                            <span class="event-text remove-spacing">Calgary, AB, CA</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, vix ad euismod scriptorem. Quo prodesset dissentiet et, pri ea nostro utamur maiorum. Legendos comprehensam vis eu, no sed illum concludaturque. Eos eu reque saperet epicurei, sed ad nobis platonem iudicabit. Modus reformidans usu ei.
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <h3 class="remove-spacing">Race Title</h3>
                             <span class="event-text remove-spacing">July 29-30, 2015 - </span>
                             <span class="event-text remove-spacing">Calgary, AB, CA</span>
                             <p>
@@ -164,7 +265,7 @@
                         <hr>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
     <?php if ($page['footer']): ?>
