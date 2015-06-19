@@ -28,7 +28,12 @@
 <div id="content-container" >
     <div id="logo-and-nav" class="pure-g">
         <div class="pure-u-1 pure-u-sm-1 pure-u-md-2-5 ">
-            <a href="index.html"><img src="img/logo.png" alt="Joker Lane Raceway" class="pure-img"></a>
+            <?php if ($logo): ?>
+                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="pure-img">
+                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+                </a>
+            <?php endif; ?>
+<!--            <a href="index.html"><img src="img/logo.png" alt="Joker Lane Raceway" class="pure-img"></a>-->
         </div>
         <div class="pure-u-1 pure-u-sm-1 pure-u-md-3-5">
             <!--<h1 id="sneak-peak">Sneak Peak In!</h1>
@@ -49,8 +54,11 @@
                     <a href="#"><img src="img/Instagram-white-small.png" alt="Instagram" class="hidden"></a>
                 </span>
                 <div class="clear"></div>-->
+
                 <div id="nav" class="pure-menu pure-menu-horizontal pure-menu-scrollable">
                     <?php print drupal_render(menu_tree('main-menu')); ?>
+
+
                     <!--
                     <ul class="pure-menu-list">
                         <li class="pure-menu-item "><a href="calendar.html" class="navigate pure-menu-link">Calendar</a></li>

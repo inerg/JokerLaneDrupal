@@ -3,14 +3,20 @@ description = A drupal version of the Joker Lane Raceway site
 package = Core
 version = VERSION
 core = 7.x
+
 stylesheets[all][] = css/pure-min.css
 stylesheets[all][] = css/grids-responsive-min.css
 stylesheets[all][] = css/style.css
 stylesheets[gallery][] = css/lightbox.css
+
 scripts[] = js/jquery-1.11.0.min.js
 scripts[] = js/lightbox.min.js
+
 features[] = main_menu
 features[] = secondary_menu
+features[] = logo
+feature[] = background
+
 regions[page_top] = Page top
 regions[header] = Header
 regions[highlight] = Highlight
