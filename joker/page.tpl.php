@@ -46,16 +46,19 @@
                      );
                    });
             </script>-->
-            <!--<div id="push-down">
-                <span id="social-media">
+            <div id="push-down">
+
+                <!--<span id="social-media">
                     <a href="https://www.facebook.com/pages/AKA-Racing-Team/585982068209490"><img src="img/FB-f-Logo__white_29.png" alt="Facebook"></a>
                     <a href="#"><img src="img/YouTube-logo-light-small.png" alt="Youtube" class="hidden"></a>
                     <a href="#"><img src="img/Twitter_logo_white_Small.png" alt="Twitter" class="hidden"></a>
                     <a href="#"><img src="img/Instagram-white-small.png" alt="Instagram" class="hidden"></a>
-                </span>
-                <div class="clear"></div>-->
+                </span>-->
 
-                <div id="nav" class="pure-menu pure-menu-horizontal pure-menu-scrollable">
+                <?php print render($page['social_media']); ?>
+                <div class="clear"></div>
+
+                <!--<div id="nav" class="pure-menu pure-menu-horizontal pure-menu-scrollable">-->
                     <?php print drupal_render(menu_tree('main-menu')); ?>
 
 
@@ -72,10 +75,10 @@
                         <li class="pure-menu-item"><a href="contact.html" class="navigate pure-menu-link">Contact</a></li>
                     </ul>
                     -->
-                </div>
+                <!--</div>-->
             </div>
         </div>
-
+    </div>
 
 
 
@@ -167,16 +170,18 @@
     <div id="footer" class="black-background">
         <div class="box">
             <?php print render($page['footer']); ?>
-            <!-- &copy; Joker Lane Raceway All rights Reserved.
+            <!-- &copy; Joker Lane Raceway All rights Reserved.-->
+
             <div class="float-right">
-                <span>
+                <?php print render($page['social_media']); ?>
+                <!--<span>
                     <a href="https://www.facebook.com/pages/AKA-Racing-Team/585982068209490"><img src="img/FB-f-Logo__white_29.png" alt="Facebook"></a>
                     <a href="#"><img src="img/YouTube-logo-light-small.png" alt="Youtube" class="hidden"></a>
                     <a href="#"><img src="img/Twitter_logo_white_Small.png" alt="Twitter" class="hidden"></a>
                     <a href="#"><img src="img/Instagram-white-small.png" alt="Instagram" class="hidden"></a>
-                </span>
+                </span>-->
             </div>
-            -->
+
         </div>
     </div>
     <?php endif; ?>

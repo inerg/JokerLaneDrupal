@@ -1,7 +1,7 @@
 <?php
 
 function joker_menu_tree($variables) {
-    return '<ul class="pure-menu-list">' . $variables ['tree'] . '</ul>';
+    return '<div id="nav" class="pure-menu pure-menu-horizontal pure-menu-scrollable"><ul class="pure-menu-list">' . $variables ['tree'] . '</ul></div>';
 }
 
 /*function joker_menu_link(array $variables) {
@@ -35,4 +35,9 @@ function joker_menu_link(array $variables) {
     $output = str_replace("active", "", $output);
     $temp = '<li' . drupal_attributes($element ['#attributes']) . '>' . $output . $sub_menu . "</li>\n" . $separator;
     return $temp;
+}
+
+function social_media_block_info()  {
+    $blocks = array();
+    $blocks['social_block'] = array('info' => t('Social Media'),);
 }
