@@ -112,7 +112,8 @@
         <div class="box">
             <div class="body-header pure-g">
                 <div class="pure-u-1 pure-u-sm-1-2">
-                    <h1 class="remove-spacing">Latest News</h1>
+                    <h1 class="remove-spacing"><?php print render($title); ?></h1>
+                    <!--<h1 class="remove-spacing">Latest News</h1>-->
                 </div>
                 <div class="pure-u-1 pure-u-sm-1-2 ">
                     <h3 class="remove-spacing">Subscribe for updates</h3>
