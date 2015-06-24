@@ -111,10 +111,10 @@
     <div id="main-content" class="black-background">
         <div class="box">
             <div class="body-header pure-g">
-                <div class="pure-u-1 pure-u-sm-1-2">
+                <div class="pure-u-1 pure-u-sm-3-5">
                     <h1 class="remove-spacing">Latest News</h1>
                 </div>
-                <div class="pure-u-1 pure-u-sm-1-2 ">
+                <div class="pure-u-1 pure-u-sm-2-5 ">
                     <h3 class="remove-spacing">Subscribe for updates</h3>
                     <form action="#" method="POST">
                         <input type="email" name="email" placeholder="Enter valid email" id="subscribe" required="">
