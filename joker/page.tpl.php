@@ -148,14 +148,15 @@
                         <hr>
                     </div>
                 </div>
-                <div class="pure-u-1 pure-u-sm-2-5 ">
+                <?php print render($page['sidebar_first']) ?>
+                <!--<div class="pure-u-1 pure-u-sm-2-5 ">
                     <div class=" box">
                         <h2 class="remove-spacing">Track Development</h2>
                         <hr class="dashed">
 
                         <div>
                             <h3 class="remove-spacing">Race Title</h3><!--Track update node-->
-                            <span class="event-text remove-spacing">July 29-30, 2015 - </span>
+                            <!--<span class="event-text remove-spacing">July 29-30, 2015 - </span>
                             <span class="event-text remove-spacing">Calgary, AB, CA</span>
                             <p>
                                 Lorem ipsum dolor sit amet, vix ad euismod scriptorem. Quo prodesset dissentiet et, pri ea nostro utamur maiorum. Legendos comprehensam vis eu, no sed illum concludaturque. Eos eu reque saperet epicurei, sed ad nobis platonem iudicabit. Modus reformidans usu ei.
@@ -163,7 +164,7 @@
                         </div>
                         <hr>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
