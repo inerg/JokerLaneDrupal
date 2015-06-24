@@ -120,7 +120,7 @@
 
             </div>
         </div>
-    </div>
+
     <?php if ($page['footer']): ?>
     <div id="footer" class="black-background">
         <div class="box">
