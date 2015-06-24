@@ -110,7 +110,7 @@
 
     <div id="main-content" class="black-background">
         <div class="box">
-            <div class="body-header pure-g">
+            <div class="body-header">
                     <h1 class="remove-spacing"><?php print render($title); ?></h1>
             </div>
             <hr>
