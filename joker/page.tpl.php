@@ -46,6 +46,7 @@
                      );
                    });
             </script>-->
+            <h2 class="remove-spacing box"><?php print $site_slogan; ?></h2>
             <div id="push-down">
 
                 <!--<span id="social-media">

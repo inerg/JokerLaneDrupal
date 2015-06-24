@@ -46,6 +46,7 @@
                      );
                    });
             </script>-->
+            <h2 class="remove-spacing box"><?php print $site_slogan; ?></h2>
             <div id="push-down">
 
                 <!--<span id="social-media">
@@ -147,7 +148,11 @@
                         <hr>-->
                     </div>
                 </div>
-                <?php print render($page['sidebar_first']) ?>
+                <div class="pure-u-1 pure-u-sm-2-5 ">
+                    <div class=" box">
+                        <?php print render($page['sidebar_first']) ?>
+                    </div>
+                </div>
                 <!--<div class="pure-u-1 pure-u-sm-2-5 ">
                     <div class=" box">
                         <h2 class="remove-spacing">Track Development</h2>
