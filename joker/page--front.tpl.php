@@ -111,13 +111,59 @@
     <div id="main-content" class="black-background">
         <div class="box">
             <div class="body-header pure-g">
-                    <h1 class="remove-spacing"><?php print render($title); ?></h1>
+                <div class="pure-u-1 pure-u-sm-3-5">
+                    <h1 class="remove-spacing">Latest News</h1>
+                </div>
+                <div class="pure-u-1 pure-u-sm-2-5 ">
+                    <h3 class="remove-spacing">Subscribe for updates</h3>
+                    <form action="#" method="POST">
+                        <input type="email" name="email" placeholder="Enter valid email" id="subscribe" required="">
+                        <br>
+                        <input type="submit" value="Subscribe now" class="button float-right">
+                    </form>
+                </div>
             </div>
             <hr>
-
-
+            <div class="remove-spacing pure-g">
+                <div id="upcoming-race" class="pure-u-1 pure-u-sm-3-5">
+                    <div class="box sidebar-right">
                         <?php print render($page['content']) ?>
+                        <!--<h2 class="remove-spacing">Upcoming Race Events</h2>
+                        <hr class="dashed">
+                        <div class="pure-g"><!--Race event node-->
+                            <!--<div class="pure-u-1-3">
+                                <a href="#"><img src="img/rcgears-small.png" alt="club picture" class="pure-img"></a>
+                            </div>
+                            <div class="pure-u-2-3">
+                                <h3 class="remove-spacing">Race Title</h3>
+                                <span class="event-text remove-spacing">July 29-30, 2015 - </span>
+                                <span class="event-text remove-spacing">Calgary, AB, CA</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, vix ad euismod scriptorem. Quo prodesset dissentiet et, pri ea nostro utamur maiorum. Legendos comprehensam vis eu, no sed illum concludaturque. Eos eu reque saperet epicurei, sed ad nobis platonem iudicabit. Modus reformidans usu ei.
+                                </p>
+                            </div>
 
+                        </div>
+                        <hr>-->
+                    </div>
+                </div>
+                <?php print render($page['sidebar_first']) ?>
+                <!--<div class="pure-u-1 pure-u-sm-2-5 ">
+                    <div class=" box">
+                        <h2 class="remove-spacing">Track Development</h2>
+                        <hr class="dashed">
+
+                        <div>
+                            <h3 class="remove-spacing">Race Title</h3><!--Track update node-->
+                            <!--<span class="event-text remove-spacing">July 29-30, 2015 - </span>
+                            <span class="event-text remove-spacing">Calgary, AB, CA</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, vix ad euismod scriptorem. Quo prodesset dissentiet et, pri ea nostro utamur maiorum. Legendos comprehensam vis eu, no sed illum concludaturque. Eos eu reque saperet epicurei, sed ad nobis platonem iudicabit. Modus reformidans usu ei.
+                            </p>
+                        </div>
+                        <hr>
+                    </div>
+                </div>-->
             </div>
         </div>
     </div>
