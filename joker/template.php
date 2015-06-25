@@ -1,7 +1,7 @@
 <?php
 
 function joker_menu_tree($variables) {
-    return '<div id="nav" class="pure-menu pure-menu-horizontal pure-menu-scrollable"><ul class="pure-menu-list">' . $variables ['tree'] . '</ul></div>';
+    return '<div class="pure-menu pure-menu-horizontal pure-menu-scrollable"><ul class="pure-menu-list centre">' . $variables ['tree'] . '</ul></div>';
 }
 
 /*function joker_menu_link(array $variables) {

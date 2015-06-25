@@ -59,9 +59,9 @@
                 <?php print render($page['social_media']); ?>
                 <div class="clear"></div>
 
-                <!--<div id="nav" class="pure-menu pure-menu-horizontal pure-menu-scrollable">-->
+                <div id="nav" >
                     <?php print drupal_render(menu_tree('main-menu')); ?>
-
+                </div>
 
                     <!--
                     <ul class="pure-menu-list">
@@ -83,8 +83,7 @@
 
 
 
-    <div id="nav2" class="pure-menu pure-menu-horizontal pure-menu-scrollable">
-        <ul class="pure-menu-list centre">
+    <div id="nav2">
             <?php print drupal_render(menu_tree('menu-secondary-menu')); ?>
             <!--
             <li class="pure-menu-item "><a href="track-info.html" class="navigate pure-menu-link">Track information</a></li>
@@ -95,7 +94,6 @@
             <li class="pure-menu-separator"></li>
             <li class="pure-menu-item"><a href="pro-team.html" class="navigate pure-menu-link">AKA Racing Team</a></li>
             -->
-        </ul>
     </div>
 
     <!--<div id="welcome" class="pure-g black-background">
