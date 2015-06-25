@@ -60,7 +60,9 @@
                 <div class="clear"></div>
 
                 <!--<div id="nav" class="pure-menu pure-menu-horizontal pure-menu-scrollable">-->
+                <div id="nav" >
                     <?php print drupal_render(menu_tree('main-menu')); ?>
+                </div>
 
 
                     <!--
