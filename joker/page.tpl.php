@@ -85,7 +85,7 @@
 
     <div id="nav2" class="pure-menu pure-menu-horizontal pure-menu-scrollable">
         <ul class="pure-menu-list centre">
-            <?php print drupal_render(menu_tree('secondary-menu')); ?>
+            <?php print drupal_render(menu_tree('menu-secondary-menu')); ?>
             <!--
             <li class="pure-menu-item "><a href="track-info.html" class="navigate pure-menu-link">Track information</a></li>
             <li class="pure-menu-separator"></li>
